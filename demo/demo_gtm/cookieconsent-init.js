@@ -16,7 +16,7 @@ cc.run({
     // autorun: true,                           // default: true
     // delay: 0,                                // default: 0
     // hide_from_bots: false,                   // default: false
-    // remove_cookie_tables: false              // default: false
+     remove_cookie_tables: true              // default: false
     // cookie_domain: location.hostname,        // default: current domain
     // cookie_path: '/',                        // default: root
     // cookie_same_site: 'Lax',
@@ -70,6 +70,9 @@ cc.run({
                 },
                 revision_message: '<br><br> Dear user, terms and conditions have changed since the last time you visisted!'
             },
+              show_close_button: true, // Add a close button to the consent modal
+      show_decline_all_button: true, // Add a "Decline All" button to the consent modal
+    },
             settings_modal: {
                 title: 'Cookie settings',
                 save_settings_btn: 'Save current selection',
@@ -84,7 +87,7 @@ cc.run({
                 blocks: [
                     {
                         title: 'Cookie usage',
-                        description: LOREM_IPSUM + ' <a href="#" class="cc-link">Privacy Policy</a>.'
+                        description:'Read our privacy policy' + ' <a href="#" class="cc-link">Privacy Policy</a>.'
                     }, {
                         title: 'Strictly necessary cookies',
                         description: LOREM_IPSUM + LOREM_IPSUM + "<br><br>" + LOREM_IPSUM + LOREM_IPSUM,
@@ -104,20 +107,20 @@ cc.run({
                         cookie_table: [
                             {
                                 col1: '^_ga',
-                                col2: 'yourdomain.com',
+                                col2: 'ambaamba.studio',
                                 col3: 'description ...',
                                 is_regex: true
                             },
                             {
                                 col1: '_gid',
-                                col2: 'yourdomain.com',
+                                col2: 'ambaamba.studio',
                                 col3: 'description ...',
                             },
                             {
                                 col1: '_my_cookie',
-                                col2: 'yourdomain.com',
+                                col2: 'ambaamba.studio',
                                 col3: 'test cookie with custom path ...',
-                                path: '/demo'       // needed for autoclear cookies
+                                path: '/analytics'       // needed for autoclear cookies
                             }
                         ]
                     }, {
@@ -140,7 +143,7 @@ cc.run({
                         ]
                     }, {
                         title: 'More information',
-                        description: LOREM_IPSUM + ' <a class="cc-link" href="https://orestbida.com/contact/">Contact me</a>.',
+                        description: 'Read more on our cookie policy disclaimer' + ' <a class="cc-link" href="www.ambaamba.studio/cookies-policy-disclaimer">Contact me</a>.',
                     }
                 ]
             }
