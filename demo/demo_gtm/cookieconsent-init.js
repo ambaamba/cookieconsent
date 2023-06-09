@@ -87,10 +87,10 @@ cc.run({
                 blocks: [
                     {
                         title: 'Cookie usage',
-                        description:'Read our privacy policy' + ' <a href="#" class="cc-link">Privacy Policy</a>.'
+                        description:'Read our Privacy Policy' + ' <a href="#" class="cc-link">Privacy Policy</a>.'
                     }, {
                         title: 'Strictly necessary cookies',
-                        description: LOREM_IPSUM + LOREM_IPSUM + "<br><br>" + LOREM_IPSUM + LOREM_IPSUM,
+                        description: 'These items are required to enable basic website functionality.' + "<br><br>" + 'Read our Cookie Policy Disclaimer' +' <a href="#" class="cc-link">Privacy Policy</a>,
                         toggle: {
                             value: 'necessary',
                             enabled: true,
@@ -98,7 +98,7 @@ cc.run({
                         }
                     }, {
                         title: 'Analytics & Performance cookies',
-                        description: LOREM_IPSUM,
+                        description: 'These items help the website operator understand how its website performs, how visitors interact with the site, and whether there may be technical issues. This storage type usually doesn’t collect information that identifies a visitor.',
                         toggle: {
                             value: 'analytics',
                             enabled: false,
@@ -135,7 +135,7 @@ cc.run({
                         cookie_table: [
                             {
                                 col1: '^_cl',               // New option in v2.4: regex (microsoft clarity cookies)
-                                col2: 'yourdomain.com',
+                                col2: 'ambaamba.studio',
                                 col3: 'These cookies are set by microsoft clarity',
                                 // path: '/',               // New option in v2.4
                                 is_regex: true              // New option in v2.4
