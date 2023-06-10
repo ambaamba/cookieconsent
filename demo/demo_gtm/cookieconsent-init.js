@@ -16,7 +16,7 @@ cc.run({
     // autorun: true,                           // default: true
     // delay: 0,                                // default: 0
     // hide_from_bots: false,                   // default: false
-    // remove_cookie_tables: false              // default: false
+   // remove_cookie_tables: true,              // default: false
     // cookie_domain: location.hostname,        // default: current domain
     // cookie_path: '/',                        // default: root
     // cookie_same_site: 'Lax',
@@ -129,7 +129,7 @@ cc.run({
                             readonly: false,
                             reload: 'on_disable'            // New option in v2.4, check readme.md
                         },
-                        cookie_table: [
+                      cookie_table: [
                             {
                                 col1: '^_cl',               // New option in v2.4: regex (microsoft clarity cookies)
                                 col2: 'yourdomain.com',
@@ -138,7 +138,17 @@ cc.run({
                                 is_regex: true              // New option in v2.4
                             }
                         ]
-                    }, {
+                    },
+                       {
+                                title: 'Third-party cookies',
+                                description: 'Third-Party Cookies: These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.',
+                                toggle: {
+                                    value: 'third_party',
+                                    enabled: false,
+                                    readonly: false,
+                                },
+                            },
+                    {
                         title: 'More information',
                         description: LOREM_IPSUM + ' <a class="cc-link" href="https://orestbida.com/contact/">Contact me</a>.',
                     }
