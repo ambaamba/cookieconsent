@@ -2,7 +2,21 @@
   var LOREM_IPSUM = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
   // obtain cookieconsent plugin
+  // initialize the cookie consent plugin
+  function initCookieConsent() {
+    return {
+      run: function(config) {
+        // plugin code goes here
+      },
+      allowedCategory: function(category) {
+        // check if a specific category is allowed
+      },
+    };
+  }
+
+  // obtain cookieconsent plugin
   var cc = initCookieConsent();
+
 
   // run plugin with config object
   cc.run({
