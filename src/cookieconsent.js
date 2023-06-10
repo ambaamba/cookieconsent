@@ -27,7 +27,7 @@
             'cookie_name': 'cc_cookie',
             'cookie_expiration': 182,                 // default: 6 months (in days)
             'cookie_domain': location.hostname,       // default: current domain
-            'cookie_path': '/',
+            'cookie_path': 'root',
             'cookie_same_site': 'Lax',
             'use_rfc_cookie': false,
             'autoclear_cookies': true,
