@@ -214,39 +214,7 @@ cc.run({
                 readonly: false,
               },
             },
-            {
-                title: 'Marketing cookies',
-                description:
-                  'These cookies are used to collect information about your browsing habits and interests. They are used by advertisers and marketers to deliver personalized advertisements and content tailored to your preferences. These cookies track your interactions with websites and may share this information with third parties, such as advertising networks. By enabling these cookies, you may receive targeted advertisements that are more relevant to you.',
-                toggle: {
-                  value: 'marketing',
-                  enabled: false,
-                  readonly: false,
-                  reload: 'on_disable',
-                },
-              },
-            {
-              title: 'Social media cookies',
-              description:
-                'These cookies are set by social media platforms such as Facebook, Twitter, and LinkedIn. They enable you to share our content with your friends and networks. They may track your browser across other sites and build a profile of your interests, which may impact the content and messages you see on other websites.',
-              toggle: {
-                value: 'social_media',
-                enabled: false,
-                readonly: false,
-                reload: 'on_disable',
-              },
-            },
-            {
-              title: 'Third-party cookies',
-              description:
-                'These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.',
-              toggle: {
-                value: 'third_party',
-                enabled: false,
-                readonly: false,
-                reload: 'on_disable',
-              },
-            },
+       
             {
               title: 'More information',
               description: 'For more detailed information about our use of cookies and your rights regarding your personal data, please refer to our Cookie Policy and Privacy Policy.\n\n- Cookie Policy: Our Cookie Policy provides detailed information about the types of cookies we use, their purposes, and how you can manage your cookie preferences. You can access our Cookie Policy by clicking <a href="www.ambaamba.studio/cookies-policy">here</a>.\n\n- Privacy Policy: Our Privacy Policy outlines how we collect, use, disclose, and protect your personal data. It also explains your rights and choices regarding your personal data. You can access our Privacy Policy by clicking <a href="www.ambaamba.studio/privacy-policy">here</a>.\n\nIf you have any questions, concerns, or requests regarding your personal data or our use of cookies, please feel free to <a class="cc-link" href="www.ambaamba.studio/cookies-policy-disclaimer">contact us</a>.\n\nPlease note that by contacting us, you acknowledge that you have read and understood our Cookie Policy and Privacy Policy.'
