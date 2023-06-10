@@ -1,4 +1,4 @@
-var LOREM_IPSUM = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+var LOREM_IPSUM = 'Amba Amba Studio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 // obtain cookieconsent plugin
 var cc = initCookieConsent();
@@ -16,9 +16,9 @@ cc.run({
     // autorun: true,                           // default: true
     // delay: 0,                                // default: 0
     // hide_from_bots: false,                   // default: false
-    remove_cookie_tables: true,              // default: false
+    // remove_cookie_tables: false              // default: false
     // cookie_domain: location.hostname,        // default: current domain
-     cookie_path: '/',                        // default: root
+    // cookie_path: '/',                        // default: root
     // cookie_same_site: 'Lax',
     // use_rfc_cookie: false,                   // default: false
     // revision: 0,                             // default: 0
@@ -59,7 +59,7 @@ cc.run({
         'en': {
             consent_modal: {
                 title: 'Hello traveller, it\'s cookie time!',
-                description: Our website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <a href="www.ambaamba.studio/cookies-policy-disclaimer" class="cc-link">Privacy policy</a>',
+                description: 'Our website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <a href="#privacy-policy" class="cc-link">Privacy policy</a>',
                 primary_btn: {
                     text: 'Accept all',
                     role: 'accept_all'      //'accept_selected' or 'accept_all'
@@ -84,19 +84,19 @@ cc.run({
                 blocks: [
                     {
                         title: 'Cookie usage',
-                        description: 'Read our Privacy Policy' + ' <a href="www.ambaamba.studio/cookies-policy-disclaimer" class="cc-link">Privacy Policy</a>.'
+                        description: LOREM_IPSUM + ' <a href="#" class="cc-link">Privacy Policy</a>.'
                     }, {
                         title: 'Strictly necessary cookies',
-                description: 'These cookies are essential for the proper functioning of our website. They enable basic features such as page navigation, access to secure areas, and authentication. Without these cookies, certain parts of the website may not function correctly. These cookies do not collect any personally identifiable information.',
- toggle: {
+                        description: LOREM_IPSUM + LOREM_IPSUM + "<br><br>" + LOREM_IPSUM + LOREM_IPSUM,
+                        toggle: {
                             value: 'necessary',
                             enabled: true,
                             readonly: true  //cookie categories with readonly=true are all treated as "necessary cookies"
                         }
                     }, {
                         title: 'Analytics & Performance cookies',
-           description: 'Analytics & Performance Cookies: These cookies allow us to gather anonymous information about how visitors use our website. They provide us with valuable insights into visitor behavior and help us improve the performance and functionality of our site. These cookies collect aggregated data, such as the number of visitors, the pages they visit, and the time spent on each page. The information collected is anonymous and cannot be used to personally identify you.',
- toggle: {
+                        description: LOREM_IPSUM,
+                        toggle: {
                             value: 'analytics',
                             enabled: false,
                             readonly: false
@@ -134,15 +134,14 @@ cc.run({
                                 col1: '^_cl',               // New option in v2.4: regex (microsoft clarity cookies)
                                 col2: 'yourdomain.com',
                                 col3: 'These cookies are set by microsoft clarity',
-                                 path: '/',               // New option in v2.4
+                                // path: '/',               // New option in v2.4
                                 is_regex: true              // New option in v2.4
                             }
                         ]
                     }, {
-                                title: 'More information',
-                                description: 'Read more on our cookie policy disclaimer' +
-                                    ' <a class="cc-link" href="www.ambaamba.studio/cookies-policy-disclaimer">Contact me</a>.',
-                            }
+                        title: 'More information',
+                        description: LOREM_IPSUM + ' <a class="cc-link" href="https://orestbida.com/contact/">Contact me</a>.',
+                    }
                 ]
             }
         }
