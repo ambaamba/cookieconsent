@@ -3,16 +3,16 @@
 
   // obtain cookieconsent plugin
   // initialize the cookie consent plugin
-  function initCookieConsent() {
-    return {
-      run: function(config) {
+  // function initCookieConsent() {
+  //   return {
+    //   run: function(config) {
         // plugin code goes here
-      },
-      allowedCategory: function(category) {
+   //    },
+   //    allowedCategory: function(category) {
         // check if a specific category is allowed
-      },
-    };
-  }
+   //    },
+  //   };
+ //  }
 
   // obtain cookieconsent plugin
   var cc = initCookieConsent();
