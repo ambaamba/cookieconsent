@@ -1,12 +1,12 @@
 var LOREM_IPSUM = 'Amba Amba Studio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 var LOREM_IPSUMA = 'For more detailed information about our use of cookies and your rights regarding your personal data, please refer to our Cookie Policy and Privacy Policy.\n\n- Cookie Policy: Our Cookie Policy provides detailed information about the types of cookies we use, their purposes, and how you can manage your cookie preferences. You can access our Cookie Policy by clicking <a href="www.ambaamba.studio/cookies-policy">here</a>.\n\n- Privacy Policy: Our Privacy Policy outlines how we collect, use, disclose, and protect your personal data. It also explains your rights and choices regarding your personal data. You can access our Privacy Policy by clicking <a href="www.ambaamba.studio/privacy-policy">here</a>.\n\nIf you have any questions, concerns, or requests regarding your personal data or our use of cookies, please feel free to <a class="cc-link" href="www.ambaamba.studio/cookies-policy-disclaimer">contact us</a>.\n\nPlease note that by contacting us, you acknowledge that you have read and understood our Cookie Policy and Privacy Policy.';
          
-var LOREM_IPSUMAB = 'thiis ';
-var LOREM_IPSUMABC = 'thi.';
+var LOREM_IPSUMAB = 'These cookies are essential for the proper functioning of our website. They enable basic features such as page navigation, access to secure areas, and authentication. Without these cookies, certain parts of the website may not function correctly. These cookies do not collect any personally identifiable information.';
+var LOREM_IPSUMABC = 'These cookies allow our website to remember choices you make and provide enhanced, more personalized features. They may also be used to provide services you have requested, such as watching videos or commenting on a blog.';
 var LOREM_IPSUMABCD = 'this is already a form of text';
 var LOREM_IPSUMABCDE = 'this could become some text';
 var LOREM_IPSUMABCDEF = 'this can be some text';
-var LOREM_IPSUMABCDEFG =   'Third-Party Cookies: These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.'
+var LOREM_IPSUMABCDEFG =   'Third-Party Cookies: These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.';
 // obtain cookieconsent plugin
 var cc = initCookieConsent();
 
@@ -95,16 +95,15 @@ cc.run({
 
                     }, {
                         title: 'Strictly necessary cookies',
-                                     description: 'These cookies are essential for the proper functioning of our website. They enable basic features such as page navigation, access to secure areas, and authentication. Without these cookies, certain parts of the website may not function correctly. These cookies do not collect any personally identifiable information.',
-                        toggle: {
+                                     dedescription : LOREM_IPSUMAB,
+                             toggle: {
                             value: 'necessary',
                             enabled: true,
                             readonly: true  //cookie categories with readonly=true are all treated as "necessary cookies"
                         }
                     }, {
                         title: 'Analytics & Performance cookies',
-                        description:                 'These cookies allow us to gather anonymous information about how visitors use our website. They provide us with valuable insights into visitor behavior and help us improve the performance and functionality of our site. These cookies collect aggregated data, such as the number of visitors, the pages they visit, and the time spent on each page. The information collected is anonymous and cannot be used to personally identify you.',
-,
+                        description:  LOREM_IPSUMABC,
                         toggle: {
                             value: 'analytics',
                             enabled: false,
