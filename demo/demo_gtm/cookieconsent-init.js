@@ -1,4 +1,5 @@
 var LOREM_IPSUM = 'Amba Amba Studio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+var LOREM_IPSUMA = 'thiss website uses cookieeees or sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 // obtain cookieconsent plugin
 var cc = initCookieConsent();
@@ -87,7 +88,7 @@ cc.run({
                         description: LOREM_IPSUM + ' <a href="#" class="cc-link">Privacy Policy</a>.'
                     }, {
                         title: 'Strictly necessary cookies',
-                        description: LOREM_IPSUM + LOREM_IPSUM + "<br><br>" + LOREM_IPSUM + LOREM_IPSUM,
+                        description: LOREM_IPSUMA + LOREM_IPSUM + "<br><br>" + LOREM_IPSUM + LOREM_IPSUM,
                         toggle: {
                             value: 'necessary',
                             enabled: true,
@@ -95,7 +96,7 @@ cc.run({
                         }
                     }, {
                         title: 'Analytics & Performance cookies',
-                        description: LOREM_IPSUM,
+                        description: LOREM_IPSUMA,
                         toggle: {
                             value: 'analytics',
                             enabled: false,
