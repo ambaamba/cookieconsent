@@ -1,6 +1,11 @@
 var LOREM_IPSUM = 'Amba Amba Studio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 var LOREM_IPSUMA = 'thiss website uses cookieeees or sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-
+var LOREM_IPSUMAB = 'thi';
+var LOREM_IPSUMABC = 'thi.';
+var LOREM_IPSUMABCD = 'thi';
+var LOREM_IPSUMABCDE = 'thi';
+var LOREM_IPSUMABCDEF = 'thi';
+var LOREM_IPSUMABCDEFG =   'Third-Party Cookies: These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.'
 // obtain cookieconsent plugin
 var cc = initCookieConsent();
 
@@ -96,7 +101,7 @@ cc.run({
                         }
                     }, {
                         title: 'Analytics & Performance cookies',
-                        description: LOREM_IPSUMA,
+                        description: LOREM_IPSUMABCDEFG,
                         toggle: {
                             value: 'analytics',
                             enabled: false,
@@ -140,6 +145,26 @@ cc.run({
                             }
                         ]
                     },
+                    {
+                title: 'Functionality cookies',
+                description:
+                  'Functionality Cookies: These cookies allow our website to remember choices you make and provide enhanced, more personalized features. They may also be used to provide services you have requested, such as watching videos or commenting on a blog. The information these cookies collect is anonymized and cannot track your browsing activity on other websites.',
+                toggle: {
+                  value: 'functionality',
+                  enabled: false,
+                  readonly: false,
+                }
+              },
+                        {
+                title: 'Social media cookies',
+                description:
+                  'Social Media Cookies: These cookies are set by social media platforms such as Facebook, Twitter, and LinkedIn. They enable you to share our content with your friends and networks. They may track your browser across other sites and build a profile of your interests, which may impact the content and messages you see on other websites.',
+                toggle: {
+                  value: 'social_media',
+                  enabled: false,
+                  readonly: false,
+                }
+              },
                        {
                                 title: 'Third-party cookies',
                                 description: 'Third-Party Cookies: These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.',
@@ -147,7 +172,7 @@ cc.run({
                                     value: 'third_party',
                                     enabled: false,
                                     readonly: false,
-                                },
+                                }
                             },
                     {
                         title: 'More information',
