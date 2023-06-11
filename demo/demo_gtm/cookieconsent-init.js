@@ -1,5 +1,6 @@
 var LOREM_IPSUM = 'Amba Amba Studio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-var LOREM_IPSUMA = 'thiss website uses cookieeees or sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+var LOREM_IPSUMA = 'For more detailed information about our use of cookies and your rights regarding your personal data, please refer to our Cookie Policy and Privacy Policy.\n\n- Cookie Policy: Our Cookie Policy provides detailed information about the types of cookies we use, their purposes, and how you can manage your cookie preferences. You can access our Cookie Policy by clicking <a href="www.ambaamba.studio/cookies-policy">here</a>.\n\n- Privacy Policy: Our Privacy Policy outlines how we collect, use, disclose, and protect your personal data. It also explains your rights and choices regarding your personal data. You can access our Privacy Policy by clicking <a href="www.ambaamba.studio/privacy-policy">here</a>.\n\nIf you have any questions, concerns, or requests regarding your personal data or our use of cookies, please feel free to <a class="cc-link" href="www.ambaamba.studio/cookies-policy-disclaimer">contact us</a>.\n\nPlease note that by contacting us, you acknowledge that you have read and understood our Cookie Policy and Privacy Policy.';
+         
 var LOREM_IPSUMAB = 'thi';
 var LOREM_IPSUMABC = 'thi.';
 var LOREM_IPSUMABCD = 'thi';
@@ -90,7 +91,7 @@ cc.run({
                 blocks: [
                     {
                         title: 'Cookie usage',
-                        description: LOREM_IPSUM + ' <a href="#" class="cc-link">Privacy Policy</a>.'
+                        description: LOREM_IPSUMA + ' <a href="#" class="cc-link">Privacy Policy</a>.'
                     }, {
                         title: 'Strictly necessary cookies',
                         description: LOREM_IPSUMA + LOREM_IPSUM + "<br><br>" + LOREM_IPSUM + LOREM_IPSUM,
