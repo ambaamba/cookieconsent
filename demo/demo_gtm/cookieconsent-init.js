@@ -95,7 +95,7 @@ cc.run({
 
                     }, {
                         title: 'Strictly necessary cookies',
-                                     dedescription : LOREM_IPSUMAB,
+                                     description : LOREM_IPSUMAB,
                              toggle: {
                             value: 'necessary',
                             enabled: true,
@@ -109,43 +109,52 @@ cc.run({
                             enabled: false,
                             readonly: false
                         },
-                        cookie_table: [
-                            {
-                                col1: '^_ga',
-                                col2: 'yourdomain.com',
-                                col3: 'description ...',
-                                is_regex: true
-                            },
-                            {
-                                col1: '_gid',
-                                col2: 'yourdomain.com',
-                                col3: 'description ...',
-                            },
-                            {
-                                col1: '_my_cookie',
-                                col2: 'yourdomain.com',
-                                col3: 'test cookie with custom path ...',
-                                path: '/demo'       // needed for autoclear cookies
-                            }
-                        ]
+                       // cookie_table: [
+                         //   {
+                         //       col1: '^_ga',
+                            //    col2: 'yourdomain.com',
+                            //    col3: 'description ...',
+                            //    is_regex: true
+                        //    },
+                         //   {
+                            //    col1: '_gid',
+                             //   col2: 'yourdomain.com',
+                             //   col3: 'description ...',
+                           // },
+                           // {
+                              //  col1: '_my_cookie',
+                               // col2: 'yourdomain.com',
+                              //  col3: 'test cookie with custom path ...',
+                               // path: '/demo'       // needed for autoclear cookies
+                           // }
+                       // ]
                     }, {
-                        title: 'Targeting & Advertising cookies',
-                        description: 'If this category is deselected, <b>the page will reload when preferences are saved</b>... <br><br>(demo example with reload option enabled, for scripts like microsoft clarity which will re-set cookies and send beacons even after the cookies have been cleared by the cookieconsent\'s autoclear function)',
-                        toggle: {
-                            value: 'targeting',
-                            enabled: false,
-                            readonly: false,
-                            reload: 'on_disable'            // New option in v2.4, check readme.md
-                        },
-                      cookie_table: [
-                            {
-                                col1: '^_cl',               // New option in v2.4: regex (microsoft clarity cookies)
-                                col2: 'yourdomain.com',
-                                col3: 'These cookies are set by microsoft clarity',
+                             title: 'Targeting & Advertising cookies',
+description: 'If this category is deselected, <b>the page will reload when preferences are saved</b>. This is a demo example with the reload option enabled. Scripts like Microsoft Clarity may re-set cookies and send beacons even after the cookies have been cleared by the cookieconsent\'s autoclear function.',
+toggle: {
+  value: 'targeting',
+  enabled: false,
+  readonly: false,
+  reload: 'on_disable',
+},
+
+                       // title: 'Targeting & Advertising cookies',
+                     //   description: 'If this category is deselected, <b>the page will reload when preferences are saved</b>... <br><br>(demo example with reload option enabled, for scripts like microsoft clarity which will re-set cookies and send beacons even after the cookies have been cleared by the cookieconsent\'s autoclear function)',
+                       // toggle: {
+                          //  value: 'targeting',
+                           // enabled: false,
+                           // readonly: false,
+                          //  reload: 'on_disable'            // New option in v2.4, check readme.md
+                     //   },
+                    //  cookie_table: [
+                         //   {
+                             //   col1: '^_cl',               // New option in v2.4: regex (microsoft clarity cookies)
+                             //   col2: 'yourdomain.com',
+                              //  col3: 'These cookies are set by microsoft clarity',
                                 // path: '/',               // New option in v2.4
-                                is_regex: true              // New option in v2.4
-                            }
-                        ]
+                             //   is_regex: true              // New option in v2.4
+                          //  }
+                      //  ]
                     },
                     {
                 title: 'Functionality cookies',
