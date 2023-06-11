@@ -1,11 +1,11 @@
 var LOREM_IPSUM = 'Amba Amba Studio Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 var LOREM_IPSUMA = 'For more detailed information about our use of cookies and your rights regarding your personal data, please refer to our Cookie Policy and Privacy Policy.\n\n- Cookie Policy: Our Cookie Policy provides detailed information about the types of cookies we use, their purposes, and how you can manage your cookie preferences. You can access our Cookie Policy by clicking <a href="www.ambaamba.studio/cookies-policy">here</a>.\n\n- Privacy Policy: Our Privacy Policy outlines how we collect, use, disclose, and protect your personal data. It also explains your rights and choices regarding your personal data. You can access our Privacy Policy by clicking <a href="www.ambaamba.studio/privacy-policy">here</a>.\n\nIf you have any questions, concerns, or requests regarding your personal data or our use of cookies, please feel free to <a class="cc-link" href="www.ambaamba.studio/cookies-policy-disclaimer">contact us</a>.\n\nPlease note that by contacting us, you acknowledge that you have read and understood our Cookie Policy and Privacy Policy.';
          
-var LOREM_IPSUMAB = 'thi';
+var LOREM_IPSUMAB = 'thiis ';
 var LOREM_IPSUMABC = 'thi.';
-var LOREM_IPSUMABCD = 'thi';
-var LOREM_IPSUMABCDE = 'thi';
-var LOREM_IPSUMABCDEF = 'thi';
+var LOREM_IPSUMABCD = 'this is already a form of text';
+var LOREM_IPSUMABCDE = 'this could become some text';
+var LOREM_IPSUMABCDEF = 'this can be some text';
 var LOREM_IPSUMABCDEFG =   'Third-Party Cookies: These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.'
 // obtain cookieconsent plugin
 var cc = initCookieConsent();
@@ -91,10 +91,11 @@ cc.run({
                 blocks: [
                     {
                         title: 'Cookie usage',
-                        description: LOREM_IPSUMA + ' <a href="#" class="cc-link">Privacy Policy</a>.'
+                                    description: 'We use cookies on our website to enhance your browsing experience and provide personalized services. This section explains how we use cookies and similar technologies, and it provides information on your choices regarding cookies.\n\nA cookie is a small text file that is stored on your device (computer, tablet, or mobile) when you visit a website. It allows the website to recognize your device and remember certain information about your preferences or past actions.\n\nWe use different types of cookies on our website:\n\n- Strictly necessary cookies: These cookies are essential for the proper functioning of our website. They enable basic features such as page navigation, access to secure areas, and authentication. Without these cookies, certain parts of the website may not function correctly.\n\n- Functionality cookies: These cookies allow our website to remember choices you make and provide enhanced, more personalized features. They may also be used to provide services you have requested, such as watching videos or commenting on a blog.\n\n- Analytics and Performance cookies: These cookies allow us to gather anonymous information about how visitors use our website. They provide us with valuable insights into visitor behavior and help us improve the performance and functionality of our site. These cookies collect aggregated data, such as the number of visitors, the pages they visit, and the time spent on each page.\n\n- Social media cookies: These cookies are set by social media platforms such as Facebook, Twitter, and LinkedIn. They enable you to share our content with your friends and networks. They may track your browser across other sites and build a profile of your interests, which may impact the content and messages you see on other websites.\n\n- Third-party cookies: These cookies are set by third-party services or providers that we may use on our website. They may be used to track your browsing activity across different websites and create a profile of your interests. These cookies are subject to the privacy policies of the respective third parties, and we recommend reviewing their privacy policies for more information.\n\nBy using our website, you consent to the use of these cookies as described in our <a href="#" class="cc-link">Privacy Policy</a>.\n\nYou can manage your cookie preferences and make choices regarding the use of cookies by clicking on "Preferences" below. Please note that disabling certain types of cookies may impact the functionality of the website and limit your access to certain features.\n\nFor more information on how we collect, use, and protect your personal data, please read our <a href="www.ambaamba.studio/privacy-policy">Privacy Policy</a>.',
+
                     }, {
                         title: 'Strictly necessary cookies',
-                        description: LOREM_IPSUMA + LOREM_IPSUM + "<br><br>" + LOREM_IPSUM + LOREM_IPSUM,
+                                     description: 'These cookies are essential for the proper functioning of our website. They enable basic features such as page navigation, access to secure areas, and authentication. Without these cookies, certain parts of the website may not function correctly. These cookies do not collect any personally identifiable information.',
                         toggle: {
                             value: 'necessary',
                             enabled: true,
@@ -102,7 +103,8 @@ cc.run({
                         }
                     }, {
                         title: 'Analytics & Performance cookies',
-                        description: LOREM_IPSUMABCDEFG,
+                        description:                 'These cookies allow us to gather anonymous information about how visitors use our website. They provide us with valuable insights into visitor behavior and help us improve the performance and functionality of our site. These cookies collect aggregated data, such as the number of visitors, the pages they visit, and the time spent on each page. The information collected is anonymous and cannot be used to personally identify you.',
+,
                         toggle: {
                             value: 'analytics',
                             enabled: false,
@@ -177,7 +179,7 @@ cc.run({
                             },
                     {
                         title: 'More information',
-                        description: LOREM_IPSUM + ' <a class="cc-link" href="https://orestbida.com/contact/">Contact me</a>.',
+                                    description: 'For more detailed information about our use of cookies and your rights regarding your personal data, please refer to our Cookie Policy and Privacy Policy.\n\n- Cookie Policy: Our Cookie Policy provides detailed information about the types of cookies we use, their purposes, and how you can manage your cookie preferences. You can access our Cookie Policy by clicking <a href="www.ambaamba.studio/cookies-policy">here</a>.\n\n- Privacy Policy: Our Privacy Policy outlines how we collect, use, disclose, and protect your personal data. It also explains your rights and choices regarding your personal data. You can access our Privacy Policy by clicking <a href="www.ambaamba.studio/privacy-policy">here</a>.\n\nIf you have any questions, concerns, or requests regarding your personal data or our use of cookies, please feel free to <a class="cc-link" href="www.ambaamba.studio/cookies-policy-disclaimer">contact us</a>.\n\nPlease note that by contacting us, you acknowledge that you have read and understood our Cookie Policy and Privacy Policy.',
                     }
                 ]
             }
